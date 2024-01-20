@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-170959407-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-170959407-1');
+    </script>
+    <script>
+      /* Scroll to anchor doesn't work properly in firefox:
+         Temp fix: https://support.mozilla.org/en-US/questions/1267968
+      */
+      function pgshow(e) {
+        var elId = window.location.hash;
+        if (elId.length > 1) {
+          el = document.getElementById(elId.substr(1));
+          if (el) el.scrollIntoView(true);
+        }
+      }
+      // pageshow fires after load and on Back/Forward
+      window.addEventListener('pageshow', pgshow);
+    </script>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="%PUBLIC_URL%/images/Simple-Q.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="title" content="Free Queue Management System" />
+    <meta
+      name="description"
+      content="SimplQ is a free queue management system that anyone can use to create online queues. Our virtual queue management app is open source and aims to make digital crowd maangement free and easy for businesses and personal use."
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/Simple-Q.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>SimplQ</title>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <!-- Uncomment for typeform chat auto-pop up. TODO: Enable on bigger screens only 
+    <script>
+      if (!localStorage.getItem('chat-shown')) {
+        setTimeout(() => {
+          document.getElementById('chat-typeform').click();
+          localStorage.setItem('chat-shown', true);
+        }, 10000);
+      }
+    </script>-->
+  </head>
+
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div
+      id="chat-typeform"
+      data-tf-popover="PPh4SmaA"
+      data-tf-chat
+      data-tf-button-color="#0445AF"
+    ></div>
+    <script src="//embed.typeform.com/next/embed.js"></script>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>

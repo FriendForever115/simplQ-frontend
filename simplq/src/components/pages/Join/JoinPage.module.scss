@@ -1,0 +1,38 @@
+@import 'components/common.scss';
+.main-content {
+  padding: 2rem;
+  max-width: 35rem;
+  margin: auto;
+  padding-bottom: 5rem;
+
+  .queue-stats {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+// BELOW CSS IS SHARED BETWEEN JOIN PAGE AND ADMIN PAGE'S ADD MANUALLY SECTION
+.message {
+  text-align: center;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  position: relative;
+  z-index: 10;
+  & > div {
+    margin: 1rem;
+  }
+}
+
+.phone-only-container {
+  display: flex;
+  flex-direction: column;
+
+  .phone-input {
+    margin: 2rem 0;
+  }
+}

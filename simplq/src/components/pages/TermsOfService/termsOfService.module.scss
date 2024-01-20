@@ -1,0 +1,14 @@
+@import 'components/common.scss';
+
+.header-bar {
+  @include background-color();
+  @include center-horizontally();
+  @include center-vertically();
+  padding-top: 4rem;
+  min-height: 15rem;
+}
+
+.content {
+  margin: 3rem;
+  @include text-color();
+}

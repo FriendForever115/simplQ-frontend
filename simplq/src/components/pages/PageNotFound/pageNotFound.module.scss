@@ -1,0 +1,35 @@
+@import 'components/common.scss';
+
+.main {
+  @include center-horizontally();
+  @include center-vertically();
+  @include text-color();
+  font-size: x-large;
+  min-height: 75vh;
+  flex: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  div {
+    padding: 0.3rem;
+  }
+  Button {
+    cursor: pointer;
+  }
+  .text {
+    text-align: left;
+    padding: 0 40px;
+  }
+  .center {
+    @include center-horizontally();
+  }
+  .buttondiv {
+    display: flex;
+    justify-content: center;
+  }
+  .img {
+    max-width: 60vh;
+    @media (max-width: 768px) {
+      max-width: 80vw;
+    }
+  }
+}

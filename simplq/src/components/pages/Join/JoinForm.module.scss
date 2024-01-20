@@ -1,0 +1,28 @@
+@import 'components/common.scss';
+
+.formBox {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.formItem {
+  margin: 1rem 0;
+}
+
+.formBoxVertical {
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.formBoxVerticalButtons {
+  display: flex;
+  justify-content: center;
+}
+.formButtonsSpace {
+  width: 1rem;
+}
+
+.stepTopSpace {
+  padding-top: 1.5rem;
+}

@@ -1,0 +1,32 @@
+@import 'components/common.scss';
+
+.header-bar {
+  @include background-color();
+  padding: 6rem 2rem 2rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  .queue {
+    align-items: center;
+    .header-title {
+      align-items: center;
+      word-break: break-word;
+    }
+    .sub-header {
+      margin-top: -1rem;
+      font-family: Pacifico, Arial, Helvetica, sans-serif;
+      font-size: 0.8rem;
+      font-weight: 300;
+      color: #3a3768;
+      align-items: center;
+      text-align: center;
+    }
+  }
+  .header {
+    @include standard-header();
+    font-size: 2.7rem;
+    margin: 0;
+    margin-bottom: 0;
+  }
+}
